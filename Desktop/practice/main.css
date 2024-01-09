@@ -9,11 +9,14 @@
     color: #222;
   }
   .container {
+    margin: 1rem;
+    gap: 5px;
     border: 5px solid black;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 3fr ;
-    gap: 15px 20px;
+    grid-template-columns: repeat(3,100px)  ;
+  min-height: 100Vh;
+  align-content:space-evenly ;
+      
     
   }
   .cell {
@@ -27,17 +30,83 @@
   }
   .cell-1 {
     background: #581f18;
+    
+  
   }
   .cell-2 {
     background: #f0a202;
+  
   }
   .cell-3 {
     background: #d95d39;
+    
   }
   .cell-4 {
     background: #202c59;
+    
+
   }
   .cell-5 {
     background: #51cb20;
+    
   }
   
+  .cell-6 {
+    background: #2031cb;
+    
+  }
+  
+  .cell-7 {
+    background: #467e31;
+    
+  }
+  
+  .cell-8 {
+    background: #20cba0;
+    
+    
+  }
+  
+
+  
+  .grid{
+    
+    height: 100vh;
+    border: 2px solid red;
+    color: gainsboro;
+    font-weight: bold;
+    
+    display: grid;
+    grid-template-columns: repeat(autofit , minmax(100px,1fr));
+    
+  }
+
+  .item{
+    padding: 1rem;
+    text-transform: capitalize;
+  }
+
+  .item-1{
+    background-color: #20cba0;
+    
+  }
+  .item-2{
+    background-color: #164b3e;
+    ;
+  }
+  .item-3{
+    background-color: #2048cb;
+   
+  }
+  .item-4{
+    background-color: #052d5c;
+   
+  }
+  .item-5{
+    background-color: #20cba0;
+    
+  }
+  .item-6{
+    background-color: #7e20cb;
+    
+  }
